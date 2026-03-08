@@ -41,11 +41,11 @@
 
 ## 编译步骤
 
-1. 安装Qt 5.15.2及对应的VS开发工具
-2. 使用Qt Creator或VS2017打开项目文件
-3. 配置正确的Qt版本路径
-4. 执行qmake生成Makefile
-5. 编译构建项目
+1. 安装Qt 5.15.2及对应的VS开发工具。
+2. 使用Qt Creator或VS2017打开项目文件。
+3. 配置正确的Qt版本路径。
+4. MainConsole-UI直接使用Qt Creater 打开.pro文件即可。
+5. MainConsole直接使用VS2017打开sln即可。
 
 # 💡 项目意义
 
