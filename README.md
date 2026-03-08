@@ -30,9 +30,9 @@
 # 🔧代码和编译
 
 ## 代码结构
-  MainConsole-UI：纯QT的界面工程
-  MainConsole： UI和MVC逻辑，主工程。
-  Public： 公共库，含代码级、lib级、二进制级。
+  - **MainConsole-UI**：纯QT的界面工程。
+  - **MainConsole**：UI和MVC逻辑，主工程。
+  - **Public**：公共库，含代码级、lib级、二进制级。
 
 ## IDE
 
