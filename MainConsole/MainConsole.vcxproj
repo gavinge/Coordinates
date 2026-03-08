@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6844CD4B-892B-308A-86FB-AB1FEE204F34}</ProjectGuid>
+    <RootNamespace>MainConsole</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.17763.0</WindowsTargetPlatformMinVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>MainConsole</PrimaryOutput>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>MainConsole</PrimaryOutput>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>debug\</OutDir>
+    <IntDir>debug\</IntDir>
+    <TargetName>MainConsole</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>release\</OutDir>
+    <IntDir>release\</IntDir>
+    <TargetName>MainConsole</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <QtInstall>MSVC2017</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <QtInstall>MSVC2017</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;release;/include;../Public/public/;../Public/public/lib-interface/;../Public/public/common/;../Public/public/mvc/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;QT_NO_DEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;lib_json.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Public\build\libs\lib_json\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\MainConsole.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <Compression>default</Compression>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>$(ProjectDir)</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;debug;/include;../Public/public/;../Public/public/lib-interface/;../Public/public/common/;../Public/public/mvc/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\opensslx86\lib;C:\Utils\my_sql\mysql-5.6.11-win32\lib;C:\Utils\postgresqlx86\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\MainConsole.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <Compression>default</Compression>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>$(ProjectDir)</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+    <PostBuildEvent>
+      <Command>editbin /SUBSYSTEM:CONSOLE $(OUTDIR)\$(ProjectName).exe</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="about\aboutwidget.cpp" />
+    <ClCompile Include="agent_man\AgentManAddGroupWidget.cpp" />
+    <ClCompile Include="agent_man\AgentManDelGroupWidget.cpp" />
+    <ClCompile Include="agent_man\AgentManDisableChargeWidget.cpp" />
+    <ClCompile Include="agent_man\AgentManRenameGroupWidget.cpp" />
+    <ClCompile Include="agent_man\AgentManBaseView.cpp" />
+    <ClCompile Include="agent_man\agentmanwidget.cpp" />
+    <ClCompile Include="agent_man\agent_man_custom_listwidget_item.cpp" />
+    <ClCompile Include="agent_man\Controller\AgentManController.cpp" />
+    <ClCompile Include="agent_man\Model\AgentManModel.cpp" />
+    <ClCompile Include="common\custom_menu.cpp" />
+    <ClCompile Include="common\GlobalDefineUtility.cpp" />
+    <ClCompile Include="common\MessageBoxWidget.cpp" />
+    <ClCompile Include="custom_rule\Controller\RuleManController.cpp" />
+    <ClCompile Include="custom_rule\customrulewidget.cpp" />
+    <ClCompile Include="custom_rule\domain\DomainRuleDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\file\FileRuleDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\kernel\KernelRuleDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\Model\RuleManModel.cpp" />
+    <ClCompile Include="custom_rule\module\ModuleRuleDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\network\NetWorkRuleDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\process\ProcessRuleDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\protect\ProtectionRuleDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\register\RegisterRuleDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\RuleManBaseView.cpp" />
+    <ClCompile Include="custom_rule\rule_center\CustomRuleCenterWidget.cpp" />
+    <ClCompile Include="custom_rule\rule_center\domain_detail\DomainRuleEditDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\rule_center\file_detail\FileRuleEditDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\rule_center\kernel_detail\KernelRuleEditDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\rule_center\module_detail\ModuleRuleEditDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\rule_center\network_detail\NetWorkRuleEditDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\rule_center\process_detail\ProcessRuleEditDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\rule_center\protect_detail\ProtectionRuleEditDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\rule_center\register_detail\RegisterRuleEditDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\rule_center\thread_detail\ThreadRuleEditDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\rule_center\window_detail\WindowRuleEditDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\thread\ThreadRuleDetailWidget.cpp" />
+    <ClCompile Include="custom_rule\window\WindowRuleDetailWidget.cpp" />
+    <ClCompile Include="home\homewidget.cpp" />
+    <ClCompile Include="inner_rule\innerrulewidget.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="run_app\runappwidget.cpp" />
+    <ClCompile Include="setting\settingwidget.cpp" />
+    <ClCompile Include="MainWidget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="setting\settingwidget.h" />
+    <QtMoc Include="run_app\runappwidget.h" />
+    <QtMoc Include="about\aboutwidget.h" />
+    <QtMoc Include="agent_man\agent_man_custom_listwidget_item.h" />
+    <QtMoc Include="agent_man\AgentManAddGroupWidget.h" />
+    <QtMoc Include="agent_man\AgentManDelGroupWidget.h" />
+    <QtMoc Include="agent_man\AgentManDisableChargeWidget.h" />
+    <QtMoc Include="agent_man\AgentManRenameGroupWidget.h" />
+    <QtMoc Include="agent_man\agentmanwidget.h" />
+    <QtMoc Include="common\custom_menu.h" />
+    <ClInclude Include="..\Public\public\mvc\IBaseController.hpp" />
+    <ClInclude Include="..\Public\public\mvc\IBaseModelObserver.hpp" />
+    <ClInclude Include="..\Public\public\mvc\IBaseObject.hpp" />
+    <ClInclude Include="..\Public\public\mvc\IBaseModel.hpp" />
+    <ClInclude Include="..\Public\public\mvc\IBaseView.hpp" />
+    <ClInclude Include="..\Public\public\mvc\MVC.h" />
+    <ClInclude Include="agent_man\AgentManBaseView.h" />
+    <ClInclude Include="agent_man\Controller\AgentManController.h" />
+    <ClInclude Include="agent_man\Model\AgentManModel.h" />
+    <ClInclude Include="agent_man\Model\RuleDeliverEncapsulation.hpp" />
+    <ClInclude Include="common\GlobalAgentGroupMenuItemEnum.h" />
+    <ClInclude Include="common\GlobalDefineUtility.h" />
+    <QtMoc Include="common\ItemDelegate.h" />
+    <QtMoc Include="common\MessageBoxWidget.h" />
+    <ClInclude Include="common\RuleType.h" />
+    <ClInclude Include="common\ToastBoxWidget .h" />
+    <ClInclude Include="custom_rule\Controller\RuleManController.h" />
+    <ClInclude Include="custom_rule\CustomRuleUtility.h" />
+    <QtMoc Include="custom_rule\customrulewidget.h" />
+    <QtMoc Include="custom_rule\rule_center\CustomRuleCenterWidget.h" />
+    <QtMoc Include="custom_rule\domain\DomainRuleDetailWidget.h" />
+    <QtMoc Include="custom_rule\file\FileRuleDetailWidget.h" />
+    <QtMoc Include="custom_rule\kernel\KernelRuleDetailWidget.h" />
+    <QtMoc Include="custom_rule\module\ModuleRuleDetailWidget.h" />
+    <QtMoc Include="custom_rule\network\NetWorkRuleDetailWidget.h" />
+    <QtMoc Include="custom_rule\window\WindowRuleDetailWidget.h" />
+    <QtMoc Include="custom_rule\thread\ThreadRuleDetailWidget.h" />
+    <QtMoc Include="custom_rule\register\RegisterRuleDetailWidget.h" />
+    <QtMoc Include="custom_rule\protect\ProtectionRuleDetailWidget.h" />
+    <QtMoc Include="custom_rule\process\ProcessRuleDetailWidget.h" />
+    <QtMoc Include="custom_rule\rule_center\domain_detail\DomainRuleEditDetailWidget.h" />
+    <QtMoc Include="custom_rule\rule_center\file_detail\FileRuleEditDetailWidget.h" />
+    <QtMoc Include="custom_rule\rule_center\kernel_detail\KernelRuleEditDetailWidget.h" />
+    <QtMoc Include="custom_rule\rule_center\module_detail\ModuleRuleEditDetailWidget.h" />
+    <QtMoc Include="custom_rule\rule_center\network_detail\NetWorkRuleEditDetailWidget.h" />
+    <QtMoc Include="custom_rule\rule_center\window_detail\WindowRuleEditDetailWidget.h" />
+    <QtMoc Include="custom_rule\rule_center\thread_detail\ThreadRuleEditDetailWidget.h" />
+    <QtMoc Include="custom_rule\rule_center\register_detail\RegisterRuleEditDetailWidget.h" />
+    <QtMoc Include="custom_rule\rule_center\protect_detail\ProtectionRuleEditDetailWidget.h" />
+    <QtMoc Include="custom_rule\rule_center\process_detail\ProcessRuleEditDetailWidget.h" />
+    <ClInclude Include="custom_rule\Model\RuleManModel.h" />
+    <ClInclude Include="custom_rule\RuleManBaseView.h" />
+    <ClInclude Include="global\global_define.h" />
+    <QtMoc Include="home\homewidget.h" />
+    <QtMoc Include="inner_rule\innerrulewidget.h" />
+    <QtMoc Include="MainWidget.h">
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="agent_man\AgentManAddGroupWidget.ui">
+    </QtUic>
+    <QtUic Include="agent_man\AgentManCustomListWidgetItem.ui">
+    </QtUic>
+    <QtUic Include="agent_man\AgentManDelGroupWidget.ui">
+    </QtUic>
+    <QtUic Include="agent_man\AgentManDisableChargeWidget.ui">
+    </QtUic>
+    <QtUic Include="agent_man\AgentManRenameGroupWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\CustomRuleCenterWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\domain\DomainRuleDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\domain_detail\DomainRuleEditDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\file\FileRuleDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\file_detail\FileRuleEditDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\kernel\KernelRuleDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\kernel_detail\KernelRuleEditDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="common\MessageBoxWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\module\ModuleRuleDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\module_detail\ModuleRuleEditDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\network\NetWorkRuleDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\network_detail\NetWorkRuleEditDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\process\ProcessRuleDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\process_detail\ProcessRuleEditDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\protect\ProtectionRuleDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\protect_detail\ProtectionRuleEditDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\register\RegisterRuleDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\register_detail\RegisterRuleEditDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\thread\ThreadRuleDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\thread_detail\ThreadRuleEditDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\window\WindowRuleDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\window_detail\WindowRuleEditDetailWidget.ui">
+    </QtUic>
+    <QtUic Include="about\aboutwidget.ui">
+    </QtUic>
+    <QtUic Include="agent_man\agentmanwidget.ui">
+    </QtUic>
+    <QtUic Include="custom_rule\customrulewidget.ui">
+    </QtUic>
+    <QtUic Include="home\homewidget.ui">
+    </QtUic>
+    <QtUic Include="inner_rule\innerrulewidget.ui">
+    </QtUic>
+    <QtUic Include="run_app\runappwidget.ui">
+    </QtUic>
+    <QtUic Include="setting\settingwidget.ui">
+    </QtUic>
+    <QtUic Include="widget.ui">
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\image\main\home_page\agent_status.png" />
+    <None Include="res\image\agentMan\chk_check.png" />
+    <None Include="res\image\agentMan\chk_uncheck.png" />
+    <None Include="res\image\customRule\disable_rule.png" />
+    <None Include="res\image\customRule\enable_rule.png" />
+    <None Include="res\image\agentMan\group_icon.png" />
+    <QtRcc Include="image.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">image</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">image</InitFuncName>
+    </QtRcc>
+    <None Include="res\image\agentMan\left_layout.png" />
+    <None Include="res\image\main\home_page\log.png" />
+    <None Include="res\image\main\home_page\main_status.png" />
+    <None Include="res\image\agentMan\menu_addgroup.png" />
+    <None Include="res\image\agentMan\menu_delgroup.png" />
+    <None Include="res\image\agentMan\menu_renamegroup.png" />
+    <None Include="res\image\agentMan\offline.png" />
+    <None Include="res\image\agentMan\oneline.png" />
+    <None Include="res\image\main\home_page\protect_status.png" />
+    <QtRcc Include="qss.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">qss</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">qss</InitFuncName>
+    </QtRcc>
+    <None Include="res\image\agentMan\query.png" />
+    <None Include="res\image\agentMan\rdbtn_selected.png" />
+    <None Include="res\image\agentMan\rdbtn_unselected.png" />
+    <None Include="res\image\main\home_page\running_modify_status.png" />
+    <None Include="res\image\main\home_page\running_status.png" />
+    <None Include="res\image\main\home_page\running_stop_status.png" />
+    <None Include="res\image\main\home_page\service_status.png" />
+    <None Include="res\qss\style.qss" />
+    <None Include="res\image\main\title\title.png" />
+    <None Include="res\image\main\title\title_close_btn.png" />
+    <None Include="res\image\main\title\title_min_btn.png" />
+    <None Include="res\image\main\tab\toobar_bkg.png" />
+    <None Include="res\image\main\tab\toolbar_Setting.png" />
+    <None Include="res\image\main\tab\toolbar_about.png" />
+    <None Include="res\image\main\tab\toolbar_agent_man.png" />
+    <None Include="res\image\main\tab\toolbar_bkg.png" />
+    <None Include="res\image\main\tab\toolbar_custom_rule.png" />
+    <None Include="res\image\main\tab\toolbar_home.png" />
+    <None Include="res\image\main\tab\toolbar_inner_rule.png" />
+    <None Include="res\image\main\tab\toolbar_run_app.png" />
+    <None Include="res\image\main\title\update.png" />
+    <None Include="res\image\main\home_page\ver_select.png" />
+    <None Include="res\image\main\home_page\ver_status.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

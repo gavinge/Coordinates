@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/image/main/tab/toobar_bkg.png</file>
+        <file>res/image/main/tab/toolbar_about.png</file>
+        <file>res/image/main/tab/toolbar_agent_man.png</file>
+        <file>res/image/main/tab/toolbar_bkg.png</file>
+        <file>res/image/main/tab/toolbar_custom_rule.png</file>
+        <file>res/image/main/tab/toolbar_inner_rule.png</file>
+        <file>res/image/main/tab/toolbar_run_app.png</file>
+        <file>res/image/main/tab/toolbar_Setting.png</file>
+        <file>res/image/main/tab/toolbar_home.png</file>
+        <file>res/image/main/title/title_close_btn.png</file>
+        <file>res/image/main/title/title_min_btn.png</file>
+        <file>res/image/main/title/title.png</file>
+        <file>res/image/main/title/update.png</file>
+        <file>res/image/main/home_page/agent_status.png</file>
+        <file>res/image/main/home_page/log.png</file>
+        <file>res/image/main/home_page/protect_status.png</file>
+        <file>res/image/main/home_page/running_status.png</file>
+        <file>res/image/main/home_page/service_status.png</file>
+        <file>res/image/main/home_page/ver_select.png</file>
+        <file>res/image/main/home_page/ver_status.png</file>
+        <file>res/image/main/home_page/main_status.png</file>
+        <file>res/image/main/home_page/running_modify_status.png</file>
+        <file>res/image/main/home_page/running_stop_status.png</file>
+        <file>res/image/agentMan/chk_check.png</file>
+        <file>res/image/agentMan/chk_uncheck.png</file>
+        <file>res/image/agentMan/group_icon.png</file>
+        <file>res/image/agentMan/left_layout.png</file>
+        <file>res/image/agentMan/offline.png</file>
+        <file>res/image/agentMan/oneline.png</file>
+        <file>res/image/agentMan/query.png</file>
+        <file>res/image/agentMan/rdbtn_selected.png</file>
+        <file>res/image/agentMan/rdbtn_unselected.png</file>
+        <file>res/image/customRule/disable_rule.png</file>
+        <file>res/image/customRule/enable_rule.png</file>
+        <file>res/image/agentMan/menu_addgroup.png</file>
+        <file>res/image/agentMan/menu_delgroup.png</file>
+        <file>res/image/agentMan/menu_renamegroup.png</file>
+    </qresource>
+</RCC>

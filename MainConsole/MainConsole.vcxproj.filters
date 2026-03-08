@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="global">
+      <UniqueIdentifier>{e325b371-dad8-4f76-9805-235a6826e3bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mod_ext">
+      <UniqueIdentifier>{5702a296-925e-477a-9716-436a8945b1c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="about">
+      <UniqueIdentifier>{07c49e81-6b42-4c7b-9efb-1f085ec5eed9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="agent_man">
+      <UniqueIdentifier>{e4bb8c7a-36be-49ef-a7f4-0669aa20e70b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{46896868-b286-4ef5-af90-0cb1e297e133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule">
+      <UniqueIdentifier>{1662ce94-697e-4c31-ac59-5f6c8cb422b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="home">
+      <UniqueIdentifier>{92232a17-574a-4944-a0c3-75236cefd4ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inner_rule">
+      <UniqueIdentifier>{5b876fd6-0e4c-49ce-b4b7-602090722b13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="run_app">
+      <UniqueIdentifier>{5f3fa385-4930-4ffe-afd8-05c893ca20dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="setting">
+      <UniqueIdentifier>{53f1d520-e644-4bca-8e6e-1d1a7ee33d77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{e76c902b-dba7-4198-9cc0-aa2a4cad4e0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\public">
+      <UniqueIdentifier>{8cc35b2f-6bfe-4421-b705-2e59ee1a7b0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\public\common">
+      <UniqueIdentifier>{05c4aa9e-bd13-4e3a-b7c1-67f513e0e929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public\public\mvc">
+      <UniqueIdentifier>{402ca640-dcc1-4638-8cc8-06b8f706a0e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\Controller">
+      <UniqueIdentifier>{e0d988f9-937d-4f52-93df-da7e9123195b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\Model">
+      <UniqueIdentifier>{d7ec1691-b240-4e05-97ef-9efd08a8bed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View">
+      <UniqueIdentifier>{d67cd5c4-13e6-4290-b366-a04714b21c03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\network">
+      <UniqueIdentifier>{2b4709a9-1b41-497c-9dbc-721479ad31ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\module">
+      <UniqueIdentifier>{f4440c53-b11e-45d1-a011-61e5f24aeebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\kernel">
+      <UniqueIdentifier>{e965657a-3bcf-4d35-83be-b20935777ac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\file">
+      <UniqueIdentifier>{35aa1f49-585c-434d-94ad-06d368a8ad0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\domain">
+      <UniqueIdentifier>{29260f00-f804-46bd-8903-dd988f3190c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\process">
+      <UniqueIdentifier>{6259bc91-3877-47be-a2dc-462c119cd232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\protect">
+      <UniqueIdentifier>{db18dd98-2e50-49dc-8488-689df6981462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\register">
+      <UniqueIdentifier>{0a0b7cc0-375e-4aad-99df-e54cb78db577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\rule_center">
+      <UniqueIdentifier>{c415c922-421f-4d2e-9406-bb8bc1f6069c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\rule_center\domain_detail">
+      <UniqueIdentifier>{0dfa2485-8135-498a-a8d4-6d73e2b1db2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\rule_center\file_detail">
+      <UniqueIdentifier>{0c490bfe-5306-4830-868d-615ecbf08a9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\rule_center\kernel_detail">
+      <UniqueIdentifier>{81826048-3bd9-422b-8ff5-6c9a99ad05ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\rule_center\module_detail">
+      <UniqueIdentifier>{62ea0db4-a300-4481-b3f4-5c85ffa0d6b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\rule_center\network_detail">
+      <UniqueIdentifier>{dc14d05e-cb8a-4efb-8f88-b345011590a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\rule_center\process_detail">
+      <UniqueIdentifier>{1a7bc580-e947-45a0-a7d3-91c0075333f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\rule_center\protect_detail">
+      <UniqueIdentifier>{fc543ff7-f5f1-4292-b18d-66385b14548d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\rule_center\register_detail">
+      <UniqueIdentifier>{6c24e707-7e33-42c0-bf0a-4a27e1b9f4f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\rule_center\thread_detail">
+      <UniqueIdentifier>{7d67e528-ebd9-43d0-b5a4-3811d16b3c67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\rule_center\window_detail">
+      <UniqueIdentifier>{c41f2f7f-1137-4d20-8488-ec69767a52b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\thread">
+      <UniqueIdentifier>{56aaf645-ed40-42fc-940c-2d678ef7415a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_rule\View\window">
+      <UniqueIdentifier>{afbcd946-63b6-4222-928e-7143f472ba7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="agent_man\Controller">
+      <UniqueIdentifier>{0c927eb2-e98d-49a9-8ebf-7ddc01b5001b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="agent_man\Model">
+      <UniqueIdentifier>{ac3ab898-5b89-4f7d-b373-ae9c128cc16f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="agent_man\View">
+      <UniqueIdentifier>{ce832e81-324e-4d91-89fa-efb4d4b31bdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inner_rule\Controller">
+      <UniqueIdentifier>{9791a57c-d088-42f7-9902-fc621b3be1bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inner_rule\Model">
+      <UniqueIdentifier>{13ec359a-89b8-4682-ba39-75bba3f08603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inner_rule\View">
+      <UniqueIdentifier>{0ccd0172-8e3a-4ad5-b4d7-2b38bea90086}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="run_app\View">
+      <UniqueIdentifier>{7596aff8-7e9b-4e1e-aa63-98f8ebd97b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="run_app\Model">
+      <UniqueIdentifier>{15c4cb1f-fe3c-4e2b-853a-9f8a392f2d33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="run_app\Controller">
+      <UniqueIdentifier>{1f26d656-6125-4011-a406-069346a78388}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="about\aboutwidget.cpp">
+      <Filter>about</Filter>
+    </ClCompile>
+    <ClCompile Include="common\custom_menu.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\MessageBoxWidget.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="home\homewidget.cpp">
+      <Filter>home</Filter>
+    </ClCompile>
+    <ClCompile Include="setting\settingwidget.cpp">
+      <Filter>setting</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\rule_center\CustomRuleCenterWidget.cpp">
+      <Filter>custom_rule\View\rule_center</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\file\FileRuleDetailWidget.cpp">
+      <Filter>custom_rule\View\file</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\kernel\KernelRuleDetailWidget.cpp">
+      <Filter>custom_rule\View\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\module\ModuleRuleDetailWidget.cpp">
+      <Filter>custom_rule\View\module</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\network\NetWorkRuleDetailWidget.cpp">
+      <Filter>custom_rule\View\network</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\window\WindowRuleDetailWidget.cpp">
+      <Filter>custom_rule\View\window</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\thread\ThreadRuleDetailWidget.cpp">
+      <Filter>custom_rule\View\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\register\RegisterRuleDetailWidget.cpp">
+      <Filter>custom_rule\View\register</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\protect\ProtectionRuleDetailWidget.cpp">
+      <Filter>custom_rule\View\protect</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\process\ProcessRuleDetailWidget.cpp">
+      <Filter>custom_rule\View\process</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\rule_center\domain_detail\DomainRuleEditDetailWidget.cpp">
+      <Filter>custom_rule\View\rule_center\domain_detail</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\rule_center\file_detail\FileRuleEditDetailWidget.cpp">
+      <Filter>custom_rule\View\rule_center\file_detail</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\rule_center\kernel_detail\KernelRuleEditDetailWidget.cpp">
+      <Filter>custom_rule\View\rule_center\kernel_detail</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\rule_center\module_detail\ModuleRuleEditDetailWidget.cpp">
+      <Filter>custom_rule\View\rule_center\module_detail</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\rule_center\network_detail\NetWorkRuleEditDetailWidget.cpp">
+      <Filter>custom_rule\View\rule_center\network_detail</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\rule_center\window_detail\WindowRuleEditDetailWidget.cpp">
+      <Filter>custom_rule\View\rule_center\window_detail</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\rule_center\thread_detail\ThreadRuleEditDetailWidget.cpp">
+      <Filter>custom_rule\View\rule_center\thread_detail</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\rule_center\register_detail\RegisterRuleEditDetailWidget.cpp">
+      <Filter>custom_rule\View\rule_center\register_detail</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\rule_center\protect_detail\ProtectionRuleEditDetailWidget.cpp">
+      <Filter>custom_rule\View\rule_center\protect_detail</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\rule_center\process_detail\ProcessRuleEditDetailWidget.cpp">
+      <Filter>custom_rule\View\rule_center\process_detail</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="agent_man\agent_man_custom_listwidget_item.cpp">
+      <Filter>agent_man\View</Filter>
+    </ClCompile>
+    <ClCompile Include="agent_man\AgentManAddGroupWidget.cpp">
+      <Filter>agent_man\View</Filter>
+    </ClCompile>
+    <ClCompile Include="agent_man\AgentManDelGroupWidget.cpp">
+      <Filter>agent_man\View</Filter>
+    </ClCompile>
+    <ClCompile Include="agent_man\AgentManDisableChargeWidget.cpp">
+      <Filter>agent_man\View</Filter>
+    </ClCompile>
+    <ClCompile Include="agent_man\AgentManRenameGroupWidget.cpp">
+      <Filter>agent_man\View</Filter>
+    </ClCompile>
+    <ClCompile Include="agent_man\agentmanwidget.cpp">
+      <Filter>agent_man\View</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\customrulewidget.cpp">
+      <Filter>custom_rule\View</Filter>
+    </ClCompile>
+    <ClCompile Include="inner_rule\innerrulewidget.cpp">
+      <Filter>inner_rule\View</Filter>
+    </ClCompile>
+    <ClCompile Include="agent_man\Controller\AgentManController.cpp">
+      <Filter>agent_man\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="agent_man\Model\AgentManModel.cpp">
+      <Filter>agent_man\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="agent_man\AgentManBaseView.cpp">
+      <Filter>agent_man\View</Filter>
+    </ClCompile>
+    <ClCompile Include="run_app\runappwidget.cpp">
+      <Filter>run_app\View</Filter>
+    </ClCompile>
+    <ClCompile Include="common\GlobalDefineUtility.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\RuleManBaseView.cpp">
+      <Filter>custom_rule\View</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\Controller\RuleManController.cpp">
+      <Filter>custom_rule\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\Model\RuleManModel.cpp">
+      <Filter>custom_rule\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="custom_rule\domain\DomainRuleDetailWidget.cpp">
+      <Filter>custom_rule\View\domain</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="about\aboutwidget.h">
+      <Filter>about</Filter>
+    </QtMoc>
+    <QtMoc Include="common\custom_menu.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="common\ItemDelegate.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="common\MessageBoxWidget.h">
+      <Filter>common</Filter>
+    </QtMoc>
+    <QtMoc Include="home\homewidget.h">
+      <Filter>home</Filter>
+    </QtMoc>
+    <QtMoc Include="setting\settingwidget.h">
+      <Filter>setting</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\rule_center\CustomRuleCenterWidget.h">
+      <Filter>custom_rule\View\rule_center</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\domain\DomainRuleDetailWidget.h">
+      <Filter>custom_rule\View\domain</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\file\FileRuleDetailWidget.h">
+      <Filter>custom_rule\View\file</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\kernel\KernelRuleDetailWidget.h">
+      <Filter>custom_rule\View\kernel</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\module\ModuleRuleDetailWidget.h">
+      <Filter>custom_rule\View\module</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\network\NetWorkRuleDetailWidget.h">
+      <Filter>custom_rule\View\network</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\window\WindowRuleDetailWidget.h">
+      <Filter>custom_rule\View\window</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\thread\ThreadRuleDetailWidget.h">
+      <Filter>custom_rule\View\thread</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\register\RegisterRuleDetailWidget.h">
+      <Filter>custom_rule\View\register</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\protect\ProtectionRuleDetailWidget.h">
+      <Filter>custom_rule\View\protect</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\process\ProcessRuleDetailWidget.h">
+      <Filter>custom_rule\View\process</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\rule_center\domain_detail\DomainRuleEditDetailWidget.h">
+      <Filter>custom_rule\View\rule_center\domain_detail</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\rule_center\file_detail\FileRuleEditDetailWidget.h">
+      <Filter>custom_rule\View\rule_center\file_detail</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\rule_center\kernel_detail\KernelRuleEditDetailWidget.h">
+      <Filter>custom_rule\View\rule_center\kernel_detail</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\rule_center\module_detail\ModuleRuleEditDetailWidget.h">
+      <Filter>custom_rule\View\rule_center\module_detail</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\rule_center\network_detail\NetWorkRuleEditDetailWidget.h">
+      <Filter>custom_rule\View\rule_center\network_detail</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\rule_center\window_detail\WindowRuleEditDetailWidget.h">
+      <Filter>custom_rule\View\rule_center\window_detail</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\rule_center\thread_detail\ThreadRuleEditDetailWidget.h">
+      <Filter>custom_rule\View\rule_center\thread_detail</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\rule_center\register_detail\RegisterRuleEditDetailWidget.h">
+      <Filter>custom_rule\View\rule_center\register_detail</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\rule_center\protect_detail\ProtectionRuleEditDetailWidget.h">
+      <Filter>custom_rule\View\rule_center\protect_detail</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\rule_center\process_detail\ProcessRuleEditDetailWidget.h">
+      <Filter>custom_rule\View\rule_center\process_detail</Filter>
+    </QtMoc>
+    <QtMoc Include="MainWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="agent_man\agent_man_custom_listwidget_item.h">
+      <Filter>agent_man\View</Filter>
+    </QtMoc>
+    <QtMoc Include="agent_man\AgentManAddGroupWidget.h">
+      <Filter>agent_man\View</Filter>
+    </QtMoc>
+    <QtMoc Include="agent_man\AgentManDelGroupWidget.h">
+      <Filter>agent_man\View</Filter>
+    </QtMoc>
+    <QtMoc Include="agent_man\AgentManDisableChargeWidget.h">
+      <Filter>agent_man\View</Filter>
+    </QtMoc>
+    <QtMoc Include="agent_man\AgentManRenameGroupWidget.h">
+      <Filter>agent_man\View</Filter>
+    </QtMoc>
+    <QtMoc Include="agent_man\agentmanwidget.h">
+      <Filter>agent_man\View</Filter>
+    </QtMoc>
+    <QtMoc Include="custom_rule\customrulewidget.h">
+      <Filter>custom_rule\View</Filter>
+    </QtMoc>
+    <QtMoc Include="inner_rule\innerrulewidget.h">
+      <Filter>inner_rule\View</Filter>
+    </QtMoc>
+    <QtMoc Include="run_app\runappwidget.h">
+      <Filter>run_app\View</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="custom_rule\rule_center\process_detail\ProcessRuleEditDetailWidget.ui">
+      <Filter>custom_rule\View\rule_center\process_detail</Filter>
+    </QtUic>
+    <QtUic Include="agent_man\AgentManAddGroupWidget.ui">
+      <Filter>agent_man\View</Filter>
+    </QtUic>
+    <QtUic Include="agent_man\AgentManCustomListWidgetItem.ui">
+      <Filter>agent_man\View</Filter>
+    </QtUic>
+    <QtUic Include="agent_man\AgentManDelGroupWidget.ui">
+      <Filter>agent_man\View</Filter>
+    </QtUic>
+    <QtUic Include="agent_man\AgentManDisableChargeWidget.ui">
+      <Filter>agent_man\View</Filter>
+    </QtUic>
+    <QtUic Include="agent_man\AgentManRenameGroupWidget.ui">
+      <Filter>agent_man\View</Filter>
+    </QtUic>
+    <QtUic Include="agent_man\agentmanwidget.ui">
+      <Filter>agent_man\View</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\customrulewidget.ui">
+      <Filter>custom_rule\View</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\CustomRuleCenterWidget.ui">
+      <Filter>custom_rule\View\rule_center</Filter>
+    </QtUic>
+    <QtUic Include="widget.ui">
+      <Filter>Source Files</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\thread\ThreadRuleDetailWidget.ui">
+      <Filter>custom_rule\View\thread</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\thread_detail\ThreadRuleEditDetailWidget.ui">
+      <Filter>custom_rule\View\rule_center\thread_detail</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\file_detail\FileRuleEditDetailWidget.ui">
+      <Filter>custom_rule\View\rule_center\file_detail</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\module\ModuleRuleDetailWidget.ui">
+      <Filter>custom_rule\View\module</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\module_detail\ModuleRuleEditDetailWidget.ui">
+      <Filter>custom_rule\View\rule_center\module_detail</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\domain\DomainRuleDetailWidget.ui">
+      <Filter>custom_rule\View\domain</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\domain_detail\DomainRuleEditDetailWidget.ui">
+      <Filter>custom_rule\View\rule_center\domain_detail</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\file\FileRuleDetailWidget.ui">
+      <Filter>custom_rule\View\file</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\kernel\KernelRuleDetailWidget.ui">
+      <Filter>custom_rule\View\kernel</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\kernel_detail\KernelRuleEditDetailWidget.ui">
+      <Filter>custom_rule\View\rule_center\kernel_detail</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\network\NetWorkRuleDetailWidget.ui">
+      <Filter>custom_rule\View\network</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\network_detail\NetWorkRuleEditDetailWidget.ui">
+      <Filter>custom_rule\View\rule_center\network_detail</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\process\ProcessRuleDetailWidget.ui">
+      <Filter>custom_rule\View\process</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\protect\ProtectionRuleDetailWidget.ui">
+      <Filter>custom_rule\View\protect</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\protect_detail\ProtectionRuleEditDetailWidget.ui">
+      <Filter>custom_rule\View\rule_center\protect_detail</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\register\RegisterRuleDetailWidget.ui">
+      <Filter>custom_rule\View\register</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\register_detail\RegisterRuleEditDetailWidget.ui">
+      <Filter>custom_rule\View\rule_center\register_detail</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\rule_center\window_detail\WindowRuleEditDetailWidget.ui">
+      <Filter>custom_rule\View\rule_center\window_detail</Filter>
+    </QtUic>
+    <QtUic Include="custom_rule\window\WindowRuleDetailWidget.ui">
+      <Filter>custom_rule\View\window</Filter>
+    </QtUic>
+    <QtUic Include="common\MessageBoxWidget.ui">
+      <Filter>common</Filter>
+    </QtUic>
+    <QtUic Include="home\homewidget.ui">
+      <Filter>home</Filter>
+    </QtUic>
+    <QtUic Include="inner_rule\innerrulewidget.ui">
+      <Filter>inner_rule\View</Filter>
+    </QtUic>
+    <QtUic Include="run_app\runappwidget.ui">
+      <Filter>run_app\View</Filter>
+    </QtUic>
+    <QtUic Include="setting\settingwidget.ui">
+      <Filter>setting</Filter>
+    </QtUic>
+    <QtUic Include="about\aboutwidget.ui">
+      <Filter>about</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\image\main\home_page\agent_status.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\agentMan\chk_check.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\agentMan\chk_uncheck.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\customRule\disable_rule.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\customRule\enable_rule.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\agentMan\group_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="image.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="res\image\agentMan\left_layout.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\home_page\log.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\home_page\main_status.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\agentMan\menu_addgroup.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\agentMan\menu_delgroup.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\agentMan\menu_renamegroup.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\agentMan\offline.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\agentMan\oneline.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\home_page\protect_status.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="qss.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="res\image\agentMan\query.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\agentMan\rdbtn_selected.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\agentMan\rdbtn_unselected.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\home_page\running_modify_status.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\home_page\running_status.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\home_page\running_stop_status.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\home_page\service_status.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\qss\style.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\title\title.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\title\title_close_btn.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\title\title_min_btn.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\tab\toobar_bkg.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\tab\toolbar_Setting.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\tab\toolbar_about.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\tab\toolbar_agent_man.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\tab\toolbar_bkg.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\tab\toolbar_custom_rule.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\tab\toolbar_home.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\tab\toolbar_inner_rule.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\tab\toolbar_run_app.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\title\update.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\home_page\ver_select.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\image\main\home_page\ver_status.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="global\global_define.h">
+      <Filter>global</Filter>
+    </ClInclude>
+    <ClInclude Include="common\GlobalAgentGroupMenuItemEnum.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\GlobalDefineUtility.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\RuleType.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\public\mvc\IBaseController.hpp">
+      <Filter>Public\public\mvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\public\mvc\IBaseModel.hpp">
+      <Filter>Public\public\mvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\public\mvc\IBaseView.hpp">
+      <Filter>Public\public\mvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\public\mvc\IBaseObject.hpp">
+      <Filter>Public\public\mvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\public\mvc\MVC.h">
+      <Filter>Public\public\mvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\public\mvc\IBaseModelObserver.hpp">
+      <Filter>Public\public\mvc</Filter>
+    </ClInclude>
+    <ClInclude Include="custom_rule\CustomRuleUtility.h">
+      <Filter>custom_rule\View</Filter>
+    </ClInclude>
+    <ClInclude Include="agent_man\Controller\AgentManController.h">
+      <Filter>agent_man\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="agent_man\Model\AgentManModel.h">
+      <Filter>agent_man\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="agent_man\AgentManBaseView.h">
+      <Filter>agent_man\View</Filter>
+    </ClInclude>
+    <ClInclude Include="custom_rule\RuleManBaseView.h">
+      <Filter>custom_rule\View</Filter>
+    </ClInclude>
+    <ClInclude Include="custom_rule\Controller\RuleManController.h">
+      <Filter>custom_rule\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="custom_rule\Model\RuleManModel.h">
+      <Filter>custom_rule\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ToastBoxWidget .h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="agent_man\Model\RuleDeliverEncapsulation.hpp">
+      <Filter>agent_man\Model</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

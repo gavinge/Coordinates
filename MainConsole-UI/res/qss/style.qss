@@ -1,0 +1,750 @@
+﻿/*QPushButton:pressed
+{
+    background-color:rgb(200,200,200);
+    background-image: url(:/res/pic/toolbar_bkg.png);
+    border-style:insert;
+    color:rgb(0,255,0);
+}
+QPushButton{color:rgb(255,0,0)}*/
+
+
+/**全局属性**/
+/*--------------------------------------------------------------------------*/
+QLabel {
+    font-family: "Microsoft YaHei";
+    color: white;
+    /*src: url(":/path/to/MicrosoftYaHei.ttf"); */
+}
+
+
+
+
+QToolButton {
+    font-family: "Microsoft YaHei";
+}
+
+QPushButton {
+    font-family: "Microsoft YaHei";
+}
+
+
+QMenu {
+    background-color: #F5F5F5;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    /*margin: 2px;*/ /* some spacing around the menu */
+    border: 0.5px solid gray;
+
+}
+
+QMenu::item {
+    padding: 2px 25px 2px 5px;
+    border: 1px solid transparent; /* reserve space for selection border */
+    height: 22;
+}
+
+QMenu::item:selected {
+    border-color: gray;
+    background: #F6FFEA;
+}
+
+QMenu::icon {
+    padding-left: 10px;
+}
+
+
+QMenu::icon:checked { /* appearance of a 'checked' icon */
+    background: gray;
+    border: 1px inset gray;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+}
+
+QMenu::separator {
+    height: 2px;
+    background: #808080;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+QMenu::indicator {
+    width: 13px;
+    height: 13px;
+}
+/*--------------------------------------------------------------------------*/
+
+
+
+
+/**toobar相关属性**/
+/*--------------------------------------------------------------------------*/
+#topWidget {
+    background-image: url(:/res/image/main/tab/toolbar_bkg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 255);
+}
+
+#Widget {
+    /*background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #FFFFFF, stop:1 #A5E9CA);background-color:  #EEFBF3; #D7E9F3;*/
+    /*background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);*/
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+*[mainwindow_toolbutton="true"] {
+    border: 0px;
+    border-radius: 0px;
+    background-color: #00000000;
+    color:rgb(255, 255, 255);
+
+}
+
+/* 菜单栏按下时 */
+*[mainwindow_toolbutton_selected="true"] { /* italicize selected tabs */
+    /*background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 rgba(0, 0, 0, 0),
+    stop:1 rgba(0, 0, 0, 32));*/
+    background-image: url(:/res/image/main/tab/toobar_bkg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+
+/*
+#topWidget QToolButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}*/
+/*--------------------------------------------------------------------------*/
+
+
+/**title-caption 相关属性**/
+/*--------------------------------------------------------------------------*/
+
+#titleWidget QPushButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#titleWidget QPushButton#titlePushButton {
+    background-image: url(:/res/image/main/title/title.png) left center no-repeat;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+
+#titleWidget QPushButton#minPushButton {
+    background-image: url(:/res/image/main/title/title_min_btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#titleWidget QPushButton#closePushButton:hover {
+    background-color: rgba(255, 0, 0, 0.9);
+}
+
+#titleWidget QPushButton#closePushButton:pressed {
+    background-color: rgba(139, 0, 0, 0.9);
+}
+
+
+#titleWidget QPushButton#closePushButton {
+    background-image: url(:/res/image/main/title/title_close_btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#titleWidget QPushButton#minPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#titleWidget QPushButton#minPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+#titleWidget QPushButton#titleUpdate {
+    background-image: url(:/res/image/main/title/update.png);
+    background-repeat: no-repeat;
+    background-position: 0 5;
+}
+#titleWidget QPushButton#titleUpdate:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#titleWidget QPushButton#titleUpdate:pressed {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+/*--------------------------------------------------------------------------*/
+
+
+
+
+
+/**home**/
+/*--------------------------------------------------------------------------*/
+
+#HomeWidget QLabel#imageLabel {
+    background-image: url(:/res/image/main/home_page/main_status.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#HomeWidget QLabel#runningImageLabel {
+    background-image: url(:/res/image/main/home_page/service_status.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#HomeWidget QLabel#protectImageLabel {
+    background-image: url(:/res/image/main/home_page/protect_status.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#HomeWidget QLabel#clientImageLabel {
+    background-image: url(:/res/image/main/home_page/agent_status.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#HomeWidget QLabel#verImageLabel {
+    background-image: url(:/res/image/main/home_page/ver_status.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#HomeWidget QLabel#logImageLabel {
+    background-image: url(:/res/image/main/home_page/log.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*runningImageLabel
+protectImageLabel
+clientImageLabel
+verImageLabel
+logImageLabel*/
+
+#HomeWidget QPushButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#HomeWidget QPushButton#verButton {
+    background-image: url(:/res/image/main/home_page/ver_select.png);
+    background-repeat: no-repeat;
+    background-position: 0 5;
+    border: none;
+}
+
+#HomeWidget QPushButton#verButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#HomeWidget QPushButton#verButton:pressed {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+/*
+#HomeWidget QPushButton#logDetailButton {
+    background-image: url(:/res/image/main/home_page/running_status.png);
+    background-repeat: no-repeat;
+    background-position: 0 5;
+}
+
+#HomeWidget QPushButton#logDetailButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#HomeWidget QPushButton#logDetailButton:pressed {
+    background-color: rgba(255, 255, 255, 0.4);
+}*/
+
+
+
+#HomeWidget QLabel#runningImageStatus {
+    background-image: url(:/res/image/main/home_page/running_status.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
+/*#HomeWidget QWidget#logRectangle {
+    background-color: rgba(246, 246, 251, 1);
+}*/
+
+QPushButton#logDetailButton {
+    background-image: url(:/res/image/main/tab/toobar_bkg.png);
+    border: none;
+    padding: 5px 10px;
+}
+
+QPushButton#logDetailButton:hover {
+    background-color: #408C30;
+}
+
+QPushButton#logDetailButton:pressed {
+    background-color: #205C1F;
+}
+
+
+/*
+#topWidget {
+    background-image: url(:/res/image/main/tab/toolbar_bkg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 255);
+}
+*/
+/*--------------------------------------------------------------------------*/
+
+
+/*common*/
+/*---------------------------------------------------------------------------*/
+#MessageBoxWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#MessageBoxWidget QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+/*---------------------------------------------------------------------------*/
+
+/*AgentMan-page*/
+/*---------------------------------------------------------------------------*/
+#AgentManCustomListWidgetItem {
+    border: none;
+}
+
+#AgentManDisableChargeWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#AgentManDisableChargeWidget QCheckBox {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+#AgentManDisableChargeWidget QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+
+#AgentManAddGroupWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#AgentManAddGroupWidget QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+
+#AgentManRenameGroupWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#AgentManRenameGroupWidget QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+
+#AgentManDelGroupWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#AgentManDelGroupWidget QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+
+
+#AgentManWidget QPushButton { background-color: #649B17; color: white; border: none; border-radius: 3px;}
+#AgentManWidget QPushButton:hover { background-color: #52870E; color: white;}
+#AgentManWidget QPushButton:pressed { background-color: #496D0C;color: white; }
+
+#AgentManWidget QCheckBox {
+    spacing: 5px; /* 设置QCheckBox的文字和框之间的间距 */
+    color: #404040;
+}
+#AgentManWidget QCheckBox::indicator {
+    image: url(:/res/image/agentMan/chk_uncheck.png); /* 未选中状态的背景图 */
+}
+#AgentManWidget QCheckBox::indicator:checked {
+    image: url(:/res/image/agentMan/chk_check.png); /* 选中状态的背景图 */
+}
+
+/* 标签样式 */
+#AgentManCustomListWidgetItem QLabel {
+    color: #404040;
+}
+
+#AgentManWidget QLabel {
+    color: black;
+}
+
+QPushButton#researchPushButton {
+    background-image: url(:/res/image/agentMan/query.png);
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+QPushButton#researchPushButton:hover {
+    background-color: #408C30;
+}
+
+QPushButton#researchPushButton:pressed {
+    background-color: #205C1F;
+}
+
+
+
+/* 单选按钮样式 */
+#AgentManCustomListWidgetItem QRadioButton {
+    spacing: 5px; /* 设置QRadioButton的文字和框之间的间距 */
+}
+#AgentManCustomListWidgetItem QRadioButton::indicator {
+    image: url(:/res/image/agentMan/rdbtn_unselected.png); /* 未选中状态的背景图 */
+}
+#AgentManCustomListWidgetItem QRadioButton::indicator:checked {
+    image: url(:/res/image/agentMan/rdbtn_selected.png); /* 选中状态的背景图 */
+}
+
+#AgentManCustomListWidgetItem QListWidget::item:hover, QListWidget::item:selected {
+    background-color: #F6FFEA /* 设置鼠标移动或选中时的背景色 */
+}
+/*----------------------------------------------------------------------------------*/
+
+
+/**QListWidget样式**/
+/*----------------------------------------------------------------------------------*/
+#groupListWidget::item:hover{
+    background-color: #EFEFEF; /* 设置鼠标移动或选中时的背景色 */
+    border-left: 3px solid #DFDFDF;
+}
+#groupListWidget::item:selected {
+    background-color: #6ED01C; /* 设置鼠标移动或选中时的背景色 */
+    color:white;
+    border: none;
+     border-left: 3px solid #006400;
+}
+#groupListWidget::item {
+    width: 150x; height: 37px;
+}
+#groupListWidget::focus {
+    border: none;
+    outline: none;
+}
+
+QListWidget::item:hover{
+    background-color: #EFEFEF /* 设置鼠标移动或选中时的背景色 */
+}
+QListWidget::item:selected {
+    background-color: #E5F3FF; /* #96E427设置鼠标移动或选中时的背景色 */
+    color:white;
+    border: none;
+}
+QListWidget::item {
+    width: 150x;
+    height: 37px;
+}
+QListWidget::focus {
+    border: none;
+    outline: none;
+}
+/*----------------------------------------------------------------------------------*/
+
+
+/**/
+/*----------------------------------------------------------------------------------*/
+
+
+
+#CustomRuleWidget QPushButton { background-color: #649B17; color: white; border: none; border-radius: 3px;}
+#CustomRuleWidget QPushButton:hover { background-color: #52870E; color: white;}
+#CustomRuleWidget QPushButton:pressed { background-color: #496D0C;color: white; }
+
+#CustomRuleCenterWidget QPushButton { background-color: #649B17; color: white; border: none; border-radius: 3px;}
+#CustomRuleCenterWidget QPushButton:hover { background-color: #52870E; color: white;}
+#CustomRuleCenterWidget QPushButton:pressed { background-color: #496D0C;color: white; }
+
+#CustomRuleWidget QTabWidget::pane {
+    background-color: white;
+}
+
+#CustomRuleWidget QTabBar::tab {
+    padding: 8px 4px;
+    background-color: white;
+    color: #000000;
+    font-family: "Microsoft YaHei";
+    font-size: 8pt;
+    width: 85px;
+}
+
+#CustomRuleWidget  QTabBar::tab:hover {
+    background-color: white;
+    color: #006400;
+}
+
+#CustomRuleWidget QTabBar::tab:selected {
+    border-bottom: 3px solid #006400;
+}
+
+QFrame#titleFrame{
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #649B16 , stop:1 #277A88);
+}
+
+/**规则详情编辑**/
+/*--------------------------------------------------------------------------*/
+
+#CustomRuleCenterWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#ProcessRuleEditDetailWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#ProcessRuleEditDetailWidget QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+
+#ThreadRuleEditDetailWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#ThreadRuleEditDetailWidget QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+
+#FileRuleEditDetailWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#FileRuleEditDetailWidget QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+
+
+#ModuleRuleEditDetailWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#ModuleRuleEditDetailWidget QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+
+
+#KernelRuleEditDetailWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#KernelRuleEditDetailWidget QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+
+
+#NetWorkRuleEditDetailWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#NetWorkRuleEditDetailWidget QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+
+
+#DomainRuleEditDetailWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#DomainRuleEditDetailWidget QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+
+
+#WindowRuleEditDetailWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#WindowRuleEditDetailWidget  QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+
+
+#RegisterRuleEditDetailWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#RegisterRuleEditDetailWidget   QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+
+#ProtectionRuleEditDetailWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #E4F0DC, stop:1 #D7E9F3);
+}
+#ProtectionRuleEditDetailWidget QLabel {
+    font-family: "Microsoft YaHei";
+    color: black;
+}
+/*--------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+
+/**RunAppWidget***/
+/*----------------------------------------------------------------------------------*/
+#RunAppWidget QPushButton { background-color: #649B17; color: white; border: none; border-radius: 3px;}
+#RunAppWidget QPushButton:hover { background-color: #52870E; color: white;}
+#RunAppWidget QPushButton:pressed { background-color: #496D0C;color: white; }
+/*----------------------------------------------------------------------------------*/
+
+/*表格的一种美化方式*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+QHeaderView
+{
+    background:transparent;
+}
+
+QHeaderView::section
+{
+    font-family:"Microsoft YaHei";
+    color:black;
+    border: 1px solid rgba(200, 200, 200, 50%);
+    border-right: none;
+    border-left: none;
+    font-size: 7pt;
+    background:white;
+    text-align:left;
+    margin-left:0px;
+    padding-left:0px;
+    font-weight: bold; /* 设置字体加粗 */
+    min-height:38px;
+    max-height:38px;
+}
+
+QTableWidget
+{
+    background:#FFFFFF;
+    font-family:"Microsoft YaHei";
+    font-size:16px;
+    color:#666666;
+    outline:none;
+    border: none;
+}
+QTableWidget::item
+{
+        border-bottom: none;
+        color:black;
+        height:38px;
+        border-right: none;
+}
+
+QTableWidget::item:hover {
+        background-color: #EFEFEF;  /* 选中行的背景颜色 */
+}
+QTableWidget::item::selected
+{
+
+    background-color: #E5F3FF;
+    color: black;  /* 选中行的文本颜色 */
+    border-style: dotted;
+    border-width: 0.3px;
+}
+QTableView::item:alternate
+{
+    background-color: lightblue;
+}
+/*
+QTableView::item:selected:!active{
+        background-color:#f0f0f2;
+}*/
+
+
+
+
+QTableWidget::indicator {
+    width: 68px; /* 宽度 */
+    height: 25px; /* 高度 */
+}
+
+QTableWidget::indicator:checked {
+    image: url(:/res/image/customRule/enable_rule.png); /* 选中状态图标的路径 */
+}
+
+QTableWidget::indicator:unchecked {
+    image: url(:/res/image/customRule/disable_rule.png); /* 未选中状态图标的路径 */
+}
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+
+/**/
+/*----------------------------------------------------------------------------------*/
+
+#InnerRuleWidget QPushButton { background-color: #649B17; color: white; border: none; border-radius: 3px;}
+#InnerRuleWidget QPushButton:hover { background-color: #52870E; color: white;}
+#InnerRuleWidget QPushButton:pressed { background-color: #496D0C;color: white; }
+
+#InnerRuleWidget QTabWidget::pane {
+    background-color: white;
+}
+
+#InnerRuleWidget QTabBar::tab {
+    padding: 8px 4px;
+    background-color: white;
+    color: #000000;
+    font-family: "Microsoft YaHei";
+    font-size: 8pt;
+    width: 100px;
+}
+
+#InnerRuleWidget  QTabBar::tab:hover {
+    background-color: white;
+    color: #006400;
+}
+
+#InnerRuleWidget QTabBar::tab:selected {
+    border-bottom: 3px solid #006400;
+}
+/*----------------------------------------------------------------------------------*/
+
+
+
+
+
+QScrollBar:vertical {
+    border: none;
+    width: 8px;
+    background-color: #F5F5F5;
+    margin: 0px 0 0px 0;
+}
+QScrollBar::handle:vertical {
+    background-color: #CFCFCF;
+    min-height: 20px;
+}
+QScrollBar::add-line:vertical {
+    border: none;
+    background: none;
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+

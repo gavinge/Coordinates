@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomeWidget</class>
+ <widget class="QWidget" name="HomeWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1152</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <widget class="QLabel" name="imageLabel">
+   <property name="geometry">
+    <rect>
+     <x>165</x>
+     <y>60</y>
+     <width>228</width>
+     <height>228</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="welcomeLabel">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>150</y>
+     <width>591</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei</family>
+     <pointsize>19</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">margin-left: 20px; color: #333333;</string>
+   </property>
+   <property name="text">
+    <string>欢迎使用安全豹主动防御系统</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="separatorLine">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>340</y>
+     <width>1149</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #C9D8E0;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::HLine</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="midLineWidth">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QFrame" name="runningRectangle">
+   <property name="geometry">
+    <rect>
+     <x>43</x>
+     <y>365</y>
+     <width>197</width>
+     <height>195</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #F6F6FB;border-radius: 4px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="midLineWidth">
+    <number>0</number>
+   </property>
+   <widget class="QLabel" name="runningImageLabel">
+    <property name="geometry">
+     <rect>
+      <x>78</x>
+      <y>34</y>
+      <width>41</width>
+      <height>57</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="serverStatusLabel">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>100</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #66757D;</string>
+    </property>
+    <property name="text">
+     <string>服务端状态</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="runningImageStatus">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>139</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="pixmap">
+     <pixmap/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="runningTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>139</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #649B17;</string>
+    </property>
+    <property name="text">
+     <string>运行中</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="protectRectangle">
+   <property name="geometry">
+    <rect>
+     <x>259</x>
+     <y>365</y>
+     <width>197</width>
+     <height>195</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #F6F6FB;border-radius: 4px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="midLineWidth">
+    <number>0</number>
+   </property>
+   <widget class="QLabel" name="protectImageLabel">
+    <property name="geometry">
+     <rect>
+      <x>76</x>
+      <y>34</y>
+      <width>47</width>
+      <height>57</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="protectionLabel">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>100</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #66757D;</string>
+    </property>
+    <property name="text">
+     <string>客户机保护</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="protectCountLabel">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>139</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #000000;</string>
+    </property>
+    <property name="text">
+     <string>23次</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="clientRectangle">
+   <property name="geometry">
+    <rect>
+     <x>475</x>
+     <y>365</y>
+     <width>197</width>
+     <height>195</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #F6F6FB;border-radius: 4px;</string>
+   </property>
+   <widget class="QLabel" name="clientImageLabel">
+    <property name="geometry">
+     <rect>
+      <x>69</x>
+      <y>34</y>
+      <width>60</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="clientDesLabel">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>100</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #66757D;</string>
+    </property>
+    <property name="text">
+     <string>客户机保护</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="clientCountLabel">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>139</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #000000;</string>
+    </property>
+    <property name="text">
+     <string>50台</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="verRectangle">
+   <property name="geometry">
+    <rect>
+     <x>691</x>
+     <y>365</y>
+     <width>197</width>
+     <height>195</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #F6F6FB;border-radius: 4px;</string>
+   </property>
+   <widget class="QLabel" name="verImageLabel">
+    <property name="geometry">
+     <rect>
+      <x>73</x>
+      <y>34</y>
+      <width>56</width>
+      <height>43</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="verDesLabel">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>100</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #66757D;</string>
+    </property>
+    <property name="text">
+     <string>客户机版本</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="verLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>139</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #000000;</string>
+    </property>
+    <property name="text">
+     <string>23.11.09</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="verButton">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>145</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="logWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>907</x>
+     <y>365</y>
+     <width>197</width>
+     <height>195</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #F6F6FB;border-radius: 4px;</string>
+   </property>
+   <widget class="QLabel" name="logImageLabel">
+    <property name="geometry">
+     <rect>
+      <x>73</x>
+      <y>34</y>
+      <width>64</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logDetailButton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>110</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>查看日志</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

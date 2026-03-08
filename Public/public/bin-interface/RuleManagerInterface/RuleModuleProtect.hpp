@@ -1,0 +1,194 @@
+/***********************************************************************
+* @file    *.hpp
+* @brief   模块防御规则定义
+* @author  geshan@hotmail.com
+*/
+
+#ifndef __RULE_MODULE_PROTECT_DEFINE_H__
+#define __RULE_MODULE_PROTECT_DEFINE_H__
+#ifdef _WIN32
+#pragma once
+#endif
+
+#include <iostream>
+#include <vector>
+#include <string>
+
+#include "jsoncpp\json.h"
+
+
+namespace RuleManagement
+{
+	///
+	///模块防御规则
+	///
+	/*
+	{
+	  "OperationCode": 0,
+	  "RuleType": 3,
+	  "ProcessInfo": "*.exe",
+	  "ProcessInfoType": 0,
+	  "ModuleInfo": "*123.dll",
+	  "ModuleInfoType": 0,
+	  "Enabled": 1,
+	  "Log": 1,
+	  "Remark": "123123123123123123123123123123123123",
+	  "OsVersion": 3
+   }
+	*/
+
+
+	class RuleModuleProtect {
+	public:
+		int RID;
+		int RuleGroupID;  
+		int OperationCode;
+		int RuleType;
+		int ProcessInfoType;
+		std::string ProcessInfo;
+		int ModuleInfoType;
+		std::string ModuleInfo;
+		int InnerID;
+		int InnerFlg;
+		int Enabled;
+		int Log;
+		std::string Remark;
+		int OsVersion;
+
+		int Priority;
+		int CreateTime;
+		int UpdateTime;
+		int Reserved1;
+		int Reserved2;
+		int Reserved3;
+		std::string Reserved4;
+		std::string Reserved5;
+		std::string Reserved6;
+
+		RuleModuleProtect() {
+			memset(this, 0, sizeof(RuleModuleProtect));
+		}
+		~RuleModuleProtect() {}
+
+		RuleModuleProtect(int rid, int rule_group_id, int operation_code, int rule_type, int process_info_type, const std::string& process_info,
+			int module_info_type, const std::string& module_info, int inner_ID, int inner_flg, int enabled, int log,
+			const std::string& remark, int os_version, int priority, int createTime, int updateTime, int reserved1, int reserved2, int reserved3, const std::string& reserved4, const std::string& reserved5, const std::string& reserved6)
+			: RID(rid),
+			RuleGroupID(rule_group_id),
+			OperationCode(operation_code),
+			RuleType(rule_type),
+			ProcessInfoType(process_info_type),
+			ProcessInfo(process_info),
+			ModuleInfoType(module_info_type),
+			ModuleInfo(module_info),
+			InnerID(inner_ID),
+			InnerFlg(inner_flg),
+			Enabled(enabled),
+			Log(log),
+			Remark(remark),
+			OsVersion(os_version), Priority(priority), CreateTime(createTime), UpdateTime(updateTime), Reserved1(reserved1), Reserved2(reserved2), Reserved3(reserved3), Reserved4(reserved4), Reserved5(reserved5), Reserved6(reserved6) {}
+
+		RuleModuleProtect(const RuleModuleProtect& other)
+			: RID(other.RID),
+			RuleGroupID(other.RuleGroupID),
+			OperationCode(other.OperationCode),
+			RuleType(other.RuleType),
+			ProcessInfoType(other.ProcessInfoType),
+			ProcessInfo(other.ProcessInfo),
+			ModuleInfoType(other.ModuleInfoType),
+			ModuleInfo(other.ModuleInfo),
+			InnerID(other.InnerID),
+			InnerFlg(other.InnerFlg),
+			Enabled(other.Enabled),
+			Log(other.Log),
+			Remark(other.Remark),
+			OsVersion(other.OsVersion), Priority(other.Priority), CreateTime(other.CreateTime), UpdateTime(other.UpdateTime), Reserved1(other.Reserved1), Reserved2(other.Reserved2), Reserved3(other.Reserved3), Reserved4(other.Reserved4), Reserved5(other.Reserved5), Reserved6(other.Reserved6) {}
+
+		RuleModuleProtect& operator=(const RuleModuleProtect& other) {
+			if (this != &other) {
+				RID = other.RID;
+				RuleGroupID = other.RuleGroupID;
+				OperationCode = other.OperationCode;
+				RuleType = other.RuleType;
+				ProcessInfoType = other.ProcessInfoType;
+				ProcessInfo = other.ProcessInfo;
+				ModuleInfoType = other.ModuleInfoType;
+				ModuleInfo = other.ModuleInfo;
+				InnerID = other.InnerID;
+				InnerFlg = other.InnerFlg;
+				Enabled = other.Enabled;
+				Log = other.Log;
+				Remark = other.Remark;
+				OsVersion = other.OsVersion;
+
+				Priority = other.Priority;
+				CreateTime = other.CreateTime;
+				UpdateTime = other.UpdateTime;
+				Reserved1 = other.Reserved1;
+				Reserved2 = other.Reserved2;
+				Reserved3 = other.Reserved3;
+				Reserved4 = other.Reserved4;
+				Reserved5 = other.Reserved5;
+				Reserved6 = other.Reserved6;
+
+			}
+			return *this;
+		}
+
+		void toJson(Json::Value& root) const {
+			root["RID"] = RID;
+			root["RuleGroupID"] = RuleGroupID;  
+			root["OperationCode"] = OperationCode;
+			root["RuleType"] = RuleType;
+			root["ProcessInfoType"] = ProcessInfoType;
+			root["ProcessInfo"] = ProcessInfo;
+			root["ModuleInfoType"] = ModuleInfoType;
+			root["ModuleInfo"] = ModuleInfo;
+			root["InnerID"] = InnerID;
+			root["InnerFlg"] = InnerFlg;
+			root["Enabled"] = Enabled;
+			root["Log"] = Log;
+			root["Remark"] = Remark;
+			root["OsVersion"] = OsVersion;
+
+			root["Priority"] = Priority;
+			/*root["CreateTime"] = CreateTime;
+			root["UpdateTime"] = UpdateTime;
+			root["Reserved1"] = Reserved1;
+			root["Reserved2"] = Reserved2;
+			root["Reserved3"] = Reserved3;
+			root["Reserved4"] = Reserved4;
+			root["Reserved5"] = Reserved5;
+			root["Reserved6"] = Reserved6;*/
+
+		}
+
+		void fromJson(const Json::Value& root) {
+			RID = root.get("RID", 0).asInt();
+			RuleGroupID = root.get("RuleGroupID", 0).asInt(); 
+			OperationCode = root.get("OperationCode", 0).asInt();
+			RuleType = root.get("RuleType", 0).asInt();
+			ProcessInfoType = root.get("ProcessInfoType", 0).asInt();
+			ProcessInfo = root.get("ProcessInfo", "").asString();
+			ModuleInfoType = root.get("ModuleInfoType", 0).asInt();
+			ModuleInfo = root.get("ModuleInfo", "").asString();
+			InnerID = root.get("InnerID", 0).asInt();
+			InnerFlg = root.get("InnerFlg", 0).asInt();
+			Enabled = root.get("Enabled", 0).asInt();
+			Log = root.get("Log", 0).asInt();
+			Remark = root.get("Remark", "").asString();
+			OsVersion = root.get("OsVersion", 0).asInt();
+
+			Priority = root.get("Priority", 0).asInt();
+			CreateTime = root.get("CreateTime", 0).asInt();
+			UpdateTime = root.get("UpdateTime", 0).asInt();
+			Reserved1 = root.get("Reserved1", 0).asInt();
+			Reserved2 = root.get("Reserved2", 0).asInt();
+			Reserved3 = root.get("Reserved3", 0).asInt();
+			Reserved4 = root.get("Reserved4", "").asString();
+			Reserved5 = root.get("Reserved5", "").asString();
+			Reserved6 = root.get("Reserved6", "").asString();
+		}
+	};
+}
+#endif // 
